@@ -10,7 +10,7 @@ namespace GameLauncherExperimental
     {
         static void Main(string[] args)
         {
-            BuildAvaloniaApp().Start<MainWindow>(() => new MainWindowViewModel());
+            BuildAvaloniaApp().Start<LauncherWindow>(() => new LauncherWindowViewModel());
         }
 
         public static AppBuilder BuildAvaloniaApp()

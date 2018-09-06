@@ -1,0 +1,14 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:GameLauncherExperimental.ViewModels;assembly=GameLauncherExperimental"
+        Icon="resm:GameLauncherExperimental.Assets.avalonia-logo.ico"
+        Title="Game Launcher - Main">
+      
+  <Design.DataContext>
+    <vm:LauncherWindowViewModel/>
+  </Design.DataContext>
+
+    
+  <TextBlock Text="Launcher Window" HorizontalAlignment="Center" VerticalAlignment="Center"/>    
+
+</Window>
