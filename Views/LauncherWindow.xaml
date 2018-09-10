@@ -7,8 +7,27 @@
   <Design.DataContext>
     <vm:LauncherWindowViewModel/>
   </Design.DataContext>
-
     
-  <TextBlock Text="Launcher Window" HorizontalAlignment="Center" VerticalAlignment="Center"/>    
-
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="18*"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid Grid.Row="0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="7*"/>
+        <ColumnDefinition Width="3*"/>
+      </Grid.ColumnDefinitions>
+      <TextBlock  Grid.Column="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Text="NewsArea"/> 
+      <TextBlock  Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Center" Text="LoginArea"/> 
+        </Grid>
+    <Grid Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="9*"/>
+        <ColumnDefinition Width="1*"/>
+      </Grid.ColumnDefinitions>
+      <Button  Grid.Column="1" Command="{Binding LaunchButton}"   Content="{Binding LaunchButtonName}"/>
+      <ProgressBar  Grid.Column="0"   Maximum="100" Value="{Binding ProgressBarValue}"  />
+    </Grid>
+    </Grid>
 </Window>
